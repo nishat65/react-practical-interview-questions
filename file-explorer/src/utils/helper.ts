@@ -1,6 +1,6 @@
 import { FileExplorerProps } from "../types/file";
 
-export function createNewNode(type: string) {
+export function createNewNode(type: "folder" | "file") {
   return {
     id: Date.now(),
     type,

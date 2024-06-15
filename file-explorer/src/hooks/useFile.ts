@@ -11,7 +11,7 @@ import {
 function useFile(initialStructure: FileExplorerProps["structure"]) {
   const [structure, setStructure] = useState(initialStructure);
 
-  const addNode = (parentId: number, type: string) => {
+  const addNode = (parentId: number, type: "folder" | "file") => {
     const newNode = createNewNode(type);
     setStructure((prevStructure) =>
       addRecursively(newNode, prevStructure, parentId)
