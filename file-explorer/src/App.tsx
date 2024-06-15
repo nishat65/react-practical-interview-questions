@@ -1,4 +1,3 @@
-import React from "react";
 import FileExplorer from "./components/FileExporer";
 import "./App.css";
 
