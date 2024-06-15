@@ -22,7 +22,7 @@ const File = ({ node, deleteNode, renameNode }: FileProps) => {
           value={newName}
           onChange={(e) => setNewName(e.target.value)}
         />
-        <button className="btn" type="submit">
+        <button className="btn rename-btn" type="submit">
           Rename
         </button>
       </form>
