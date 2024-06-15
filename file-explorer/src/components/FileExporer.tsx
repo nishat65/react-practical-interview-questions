@@ -30,7 +30,6 @@ const initialStructure: FileExplorerProps["structure"] = [
 ];
 
 const FileExplorer = () => {
-  // const [structure, setStructure] = useState(initialStructure);
   const { structure, addNode, deleteNode, renameNode } =
     useFile(initialStructure);
 

@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 
+// pending milliseconds
 export default function useTimer() {
   const timerRef = useRef(0);
   const [isRunning, setIsRunning] = useState(false);
