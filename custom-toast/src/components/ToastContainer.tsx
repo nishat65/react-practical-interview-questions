@@ -1,4 +1,4 @@
-import { Toast } from "../context/ToastContext";
+import { Toast } from "../types/toast";
 import "./ToastContainer.css";
 
 interface ToastContainerProps {

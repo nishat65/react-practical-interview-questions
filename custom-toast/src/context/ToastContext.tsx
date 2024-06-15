@@ -1,19 +1,5 @@
 import { createContext, useState } from "react";
-
-type ToastType = "info" | "success" | "warning" | "error";
-
-export interface Toast {
-  id: number;
-  content: string;
-  type: ToastType;
-  duration: number;
-}
-
-export interface ToastContextProps {
-  toasts: Toast[];
-  addToast: (content: string, type?: ToastType, duration?: number) => void;
-  removeToast: (id: number) => void;
-}
+import { Toast, ToastContextProps, ToastType } from "../types/toast";
 
 export const ToastContext = createContext<ToastContextProps | undefined>(
   undefined
