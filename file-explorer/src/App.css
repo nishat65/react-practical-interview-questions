@@ -1,0 +1,19 @@
+.btn {
+  margin-left: 10px;
+  border: none;
+  padding: 3px;
+  font-size: 1.3rem;
+  color: black;
+  cursor: pointer;
+}
+
+.rename-btn {
+  font-size: 0.8rem;
+  padding: 0.4rem;
+  text-transform: uppercase;
+}
+
+.input {
+  margin: 10px;
+  padding: 6px;
+}

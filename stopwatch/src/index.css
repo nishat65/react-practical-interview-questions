@@ -1,0 +1,55 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  .stopwatch-display {
+    display: flex;
+    gap: 10px;
+    .time {
+      /* padding: 30px; */
+      border: 1px solid #7d7d7d;
+      border-radius: 5px;
+      font-size: 30px;
+      height: 5rem;
+      width: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .buttons-display {
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      .button {
+        background-color: orange;
+        border: none;
+        padding: 1rem;
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+
+        &.pause {
+          cursor: not-allowed;
+          background-color: #eee;
+          color: #7d7d7d;
+        }
+      }
+    }
+  }
+}
