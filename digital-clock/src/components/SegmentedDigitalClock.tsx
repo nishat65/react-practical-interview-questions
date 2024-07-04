@@ -18,13 +18,13 @@ const DigitalClock = () => {
 
   const renderDigit = (digit: string) => {
     const segments = [
-      digit !== "1" && digit !== "4",
-      digit !== "5" && digit !== "6",
-      digit !== "2",
-      digit !== "1" && digit !== "4" && digit !== "7",
-      digit === "0" || digit === "2" || digit === "6" || digit === "8",
-      digit !== "1" && digit !== "2" && digit !== "3" && digit !== "7",
-      digit !== "0" && digit !== "1" && digit !== "7",
+      digit !== "1" && digit !== "4", // for top segment
+      digit !== "5" && digit !== "6", // for  right top segment
+      digit !== "2", // for right bottom segment
+      digit !== "1" && digit !== "4" && digit !== "7", // for bottom segment
+      digit === "0" || digit === "2" || digit === "6" || digit === "8", // for left bottom segment
+      digit !== "1" && digit !== "2" && digit !== "3" && digit !== "7", // for left top segment
+      digit !== "0" && digit !== "1" && digit !== "7", // for middle segment
     ];
     console.log(segments);
     return (
